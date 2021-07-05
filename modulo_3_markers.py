@@ -3,7 +3,11 @@
 
     Com pytest.mark podemos facilimente setar metadatas para nossas funções
 
-    as markers são funções decorators do pytest
+    as markers utilizadas aqui foram:
+    - mark.skip (Pula a função de teste)
+    - mark.skipif (Pula a função de teste caso determinada condição seja atendida)
+    - mark.xfail (Quando um erro no teste é esperado por tal motivo especificado, no exemplo deste código
+                  é por conta do teste estar sendo feito no windows (win32))
 """
 
 import pytest
