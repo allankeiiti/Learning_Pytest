@@ -27,6 +27,10 @@ class Estudante:
 
 @pytest.fixture(scope="function")
 def estudante_dummy():
+    """
+        Essa Fixture permite a criação de um estudante Dummy para testes
+    :return: Estudante Object
+    """
     print('Criando estudante Dummy')
     return Estudante("Allan", datetime(1997, 12, 7), 'coe')
 
